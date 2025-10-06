@@ -11,21 +11,24 @@
 <body>
     <header>
         <h1>Darwin Díaz</h1>
+        <img src="https://picsum.photos/200/300"/>
         <p>Estudiante de Ingeniería en Computación | Desarrollador Web</p>
         <nav>
-            <ul>
+            <ol>
                 <li><a href="#perfil">Perfil Profesional</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-            </ul>
+                <li><a href="#testimonios">Testimonios</a></li>
+            </ol>
         </nav>
     </header>
     <main>
         <section id="perfil">
             <h2>Perfil Profesional</h2>
             <p>Soy estudiante de Ingeniería en Computación con interés en el desarrollo de software, la ciberseguridad y el análisis de datos. Me apasiona aprender nuevas tecnologías y aplicarlas para resolver problemas reales de manera eficiente.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4sv5vWxlYUw?si=fvOMY9OHSTO226N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <section id="educacion">
             <h2>Educación</h2>
@@ -55,6 +58,98 @@
                 <li><strong><a href="https://github.com/Darwin4050E/SantaBirraDB.git">Sistema para Discoteca con Python y SQL</a></strong> – Gestión administrativa de la discoteca SantaBirra.</li>
                 <li><strong><a href="https://github.com/Darwin4050E/Sistema-Aeropuerto.git">Sistema para Aeropuerto en Java</a></strong> – Gestión de vuelos del aerupuerto Daxing, China.</li>
             </ul>
+        </section>
+        <section id="tabla-habilidades">
+            <h2>Resumen de Conocimientos Técnicos</h2>
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <th></th>
+                    <th>Principiante</th>
+                    <th>Intermedio</th>
+                    <th>Avanzado</th>
+                </tr>
+                <tr>
+                    <th>Java</th>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <th>Python</th>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>HTML/CSS</th>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+            <article>
+                <blockquote>
+                    "Darwin demostró un compromiso excepcional con nuestro proyecto de digitalización. Su enfoque metódico y proactividad fueron claves para alcanzar los objetivos en tiempo récord."
+                </blockquote>
+                <p><strong>Ing. Laura Herrera</strong> – Gerente de Proyectos en TEINSERSA S.A.<br>
+                Trabajó con Darwin durante su pasantía en 2022, supervisando la implementación del sistema de gestión de inventarios.</p>
+            </article>
+            <article>
+                <blockquote>
+                    "Su habilidad para adaptarse rápidamente y resolver problemas complejos fue impresionante. Darwin aportó soluciones prácticas desde el primer día."
+                </blockquote>
+                <p><strong>Lic. Roberto Mejía</strong> – Coordinador Académico, ESPOL<br>
+                Fue su tutor en proyectos universitarios relacionados con análisis de datos y desarrollo web.</p>
+            </article>
+            <article>
+                <blockquote>
+                    "Trabajar con Darwin fue una experiencia enriquecedora. Tiene una gran capacidad de análisis y siempre está dispuesto a colaborar en equipo."
+                </blockquote>
+                <p><strong>Msc. Andrea Quintero</strong> – Líder de Investigación Tecnológica<br>
+                Colaboró con Darwin en un proyecto estudiantil de simulación de sistemas para aeropuertos.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255168.19938634985!2d-80.1449176354831!3d-2.1524923526169784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13cbe855805f%3A0x8015a492f4fca473!2sGuayaquil!5e0!3m2!1ses-419!2sec!4v1759778384514!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="motivo">Motivo del mensaje:</label>
+                <select id="motivo" name="motivo">
+                    <option value="felicitaciones">Felicitaciones</option>
+                    <option value="oportunidad">Oportunidad laboral</option>
+                    <option value="colaboracion">Propuesta de colaboración</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <fieldset>
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <label><input type="radio" name="contacto" value="email" checked> Email</label>
+                    <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
+                    <label><input type="radio" name="contacto" value="linkedin"> LinkedIn</label>
+                </fieldset>
+
+                <label for="temas">Temas de interés (puedes seleccionar varios):</label>
+                <select id="temas" name="temas[]" multiple size="4">
+                    <option value="desarrollo">Desarrollo Web</option>
+                    <option value="ciberseguridad">Ciberseguridad</option>
+                    <option value="datos">Análisis de Datos</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
