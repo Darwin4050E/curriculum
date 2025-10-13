@@ -15,23 +15,28 @@
 <body>
     <header>
         <h1>Darwin Díaz</h1>
-        <img src="https://picsum.photos/200/300" id="photo"/>
+        <img src="Perfil - DDG.jpg" id="photo"/>
         <p>Estudiante de Ingeniería en Computación | Desarrollador Web</p>
         <nav>
-            <ol>
+            <ul>
                 <li><a href="#perfil">Perfil Profesional</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
-            </ol>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="perfil">
             <h2 class="subtitle">Perfil Profesional</h2>
-            <p>Soy estudiante de Ingeniería en Computación con interés en el desarrollo de software, la ciberseguridad y el análisis de datos. Me apasiona aprender nuevas tecnologías y aplicarlas para resolver problemas reales de manera eficiente.</p>
+            <p>Soy estudiante de Ingeniería en Computación con interés en el desarrollo de software, la ciberseguridad y el análisis de datos. Me apasiona aprender nuevas tecnologías y aplicarlas para resolver problemas reales de manera eficiente. Mis principales objetivos profesionales son:</p>
+            <ol>
+                <li>Desarrollar software que solucione problemas reales de la sociedad.</li>
+                <li>Especializarme en ciberseguridad y análisis de datos.</li>
+                <li>Contribuir en proyectos tecnológicos de impacto social.</li>
+            </ol>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4sv5vWxlYUw?si=fvOMY9OHSTO226N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <section id="educacion">
@@ -125,7 +130,6 @@
             <form action="#" method="post">
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
-
                 <label for="motivo">Motivo del mensaje:</label>
                 <select id="motivo" name="motivo">
                     <option value="felicitaciones">Felicitaciones</option>
@@ -133,14 +137,12 @@
                     <option value="colaboracion">Propuesta de colaboración</option>
                     <option value="otro">Otro</option>
                 </select>
-
                 <fieldset>
                     <legend>¿Cómo prefieres ser contactado?</legend>
                     <label><input type="radio" name="contacto" value="email" checked> Email</label>
                     <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
                     <label><input type="radio" name="contacto" value="linkedin"> LinkedIn</label>
                 </fieldset>
-
                 <label for="temas">Temas de interés (puedes seleccionar varios):</label>
                 <select id="temas" name="temas[]" multiple size="4">
                     <option value="desarrollo">Desarrollo Web</option>
@@ -148,10 +150,12 @@
                     <option value="datos">Análisis de Datos</option>
                     <option value="otros">Otros</option>
                 </select>
-
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
+                <label>
+                    <input type="checkbox" name="suscripcion" value="si">
+                    Deseo recibir actualizaciones sobre tus proyectos o colaboraciones futuras.
+                </label>
                 <button type="submit">Enviar</button>
             </form>
         </section>
