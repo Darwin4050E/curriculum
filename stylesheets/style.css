@@ -116,7 +116,25 @@ th {
     background-color: var(--accent-color);
 }
 
-blockquote {
+#testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+#testimonios > h2 {
+    flex: 0 0 100%;
+}
+
+#testimonios > article {
+    flex: 1 1 calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#testimonios blockquote {
     font-style: italic;
     color: #444;
     border-left: 4px solid var(--accent-color);
